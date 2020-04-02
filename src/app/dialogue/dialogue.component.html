@@ -1,0 +1,22 @@
+<!-- <h2 mat-dialog-title>Log in</h2> -->
+
+
+<form (ngSubmit)="onSubmit()">
+    
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" placeholder="your name">
+  </div>
+  <div class="form-group">
+    <label>Quote</label>
+    <input type="text" class="form-control" placeholder="ie be yourself">
+  </div>
+  <div class="form-group">
+    <label>Author</label>
+    <input type="text" class="form-control" placeholder="ie Einstein">
+  </div>
+  <!-- <button type="submit" class="btn btn-success"><mat-icon>save</mat-icon></button> -->
+  <button type="submit" class="btn btn-success" mat-button (click)="openSnackBar('Quote added','Undo')"> SUBMIT </button>
+<!-- <button mat-raised-button (click)="openDialog()">ADD</button> -->
+
+</form>
